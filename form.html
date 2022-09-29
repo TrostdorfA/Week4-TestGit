@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Explaining</title>
+</head>
+<body>
+    <a href="./index.html">Go to Home</a>
+    <h1>Welcome to Form</h1>
+    <!-- Action is empty for action with Javascript and server -->
+    <form action="">
+        <div class="container-first-field">
+            <!-- En general, los formularios conviene armarlos con
+            etiquetas LABEL e INPUT -->
+            <label for="name">Name</label>
+            <!-- Los input llevan atributo de tipo mediante la palabra
+            Type, y luego puedo agregar un ID para JS y un NAME
+            required sirve para avisar que el campo es requerido obligatoriamente
+            el placeholder permite escribir un mensaje dentro del input que se borra cuando
+            el usuario teclea -->
+            <input type="text" id="name" name="name" required 
+            placeholder="Please, insert your name">
+        </div>
+        <div class="container-second-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required 
+            placeholder="Please, insert your Email">
+        </div>
+        <div class="container-third-field">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required 
+            placeholder="Please, create your password">
+        </div>
+        <div class="container-forth-field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+            placeholder="Please, insert your phone number">
+            <p>Insert your tel with this format: 345-419-2132</p>
+        </div>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" required>
+        </div>
+        <!-- Activa la funcion de SUBMIT, envia el formulario -->
+        <button>Hola, soy un boton</button>
+    </form>
+</body>
+</html>
